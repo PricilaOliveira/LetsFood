@@ -105,6 +105,10 @@ header .all-divs {
     margin-right: 40px;
 }
 
+.list-links ul .mobile-btn {
+    display: none;
+}
+
 .icons-login {
     display: flex;
     align-items: center;
@@ -480,6 +484,129 @@ footer .credits p {
 
 footer .credits i {
     color: var(--primary);
+}
+
+@media (max-width: 900px) {
+
+    /* Mobile Button */
+
+    .list-links ul .mobile-btn {
+        display: block;
+    }
+
+    .list-links ul .nav-btn {
+        display: none;
+    }
+
+    .icons-login {
+        display: none;
+    }
+
+    /* First Plate */
+
+    .image .circle-one,
+    .image .circle-two,
+    .image .circle-three {
+        display: none;
+    }
+
+    .apresentation-plate .texts button::after {
+        display: none;
+    }
+
+    .apresentation-plate {
+        flex-direction: column;
+    }
+
+    .apresentation-plate .texts h1 {
+        width: 80%;
+    }
+
+    .apresentation-plate .texts {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .apresentation-plate .texts p {
+        width: 50%;
+    }
+
+    .apresentation-plate .texts button {
+        margin-bottom: 50px;
+    }
+
+    /* Cards */
+
+    .principal-menu .all-divs .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .principal-menu .all-divs .cards > div {
+        margin-bottom: 50px;
+    }
+
+    .join-our p {
+        font-size: 1rem;
+    }
+
+    .principal-menu .all-divs .texts p {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    footer .all-divs .footer-circle-one,
+    footer .all-divs .footer-circle-two,
+    footer .all-divs .footer-circle-three {
+        display: none;
+    }
+
+    footer .all-divs .links {
+    display: flex;
+    flex-direction: column; 
+    }
+
+    footer .all-divs .infos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .all-divs .infos p {
+        text-align: center;
+    }
+
+    footer .links ul li {
+        margin-bottom: 8px;
+    }
+
+    footer .links p {
+        margin-bottom: 15px;
+    }
+
+    footer .all-divs .infos > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .all-divs .infos > div button {
+        margin-bottom: 10px;
+    }
+
+    footer .all-divs .infos button:not(:last-child) {
+        margin: 10px 0px;
+    }
+
+    footer .all-divs {
+        margin-bottom: 30px;
+    }
+
 }
 
 @media (max-width: 1340px) {
